@@ -1,0 +1,5 @@
+{
+  "tc_01_Verifying Source & Target Table Existence":{
+          "s_table":"cost",
+          "t_table": "cost_dim"
+},
