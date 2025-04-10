@@ -1,0 +1,33 @@
+2025-03-01 22:58:09,878 - INFO - *** Source and Target table Validation initiated ***
+2025-03-01 22:58:09,878 - INFO - *** Source Database MySQL Connection initiated ***
+2025-03-01 22:58:09,878 - INFO - *** Target Database Oracle Connection initiated ***
+2025-03-01 22:58:10,077 - DEBUG - # _do_auth(): self._auth_plugin: 
+2025-03-01 22:58:10,078 - INFO - package: mysql.connector.plugins
+2025-03-01 22:58:10,078 - INFO - plugin_name: caching_sha2_password
+2025-03-01 22:58:10,079 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-03-01 22:58:10,079 - DEBUG - new_auth_plugin: caching_sha2_password
+2025-03-01 22:58:10,204 - INFO - *** Initiated processing of file:tc_Cost_dim.json ***
+2025-03-01 22:58:10,205 - INFO - *** Source table:cost Target table cost_dim validation initiated ***
+2025-03-01 22:58:10,208 - ERROR - in file - tc_Cost_dim.json: ORA-00942: table or view does not exist
+2025-03-01 22:58:10,250 - DEBUG - # _do_auth(): self._auth_plugin: 
+2025-03-01 22:58:10,251 - DEBUG - new_auth_plugin: caching_sha2_password
+2025-03-01 22:58:10,289 - INFO - *** Initiated processing of file:tc_Inventory_dim.json ***
+2025-03-01 22:58:10,289 - INFO - *** Source table:inventory Target table inventory_dim validation initiated ***
+2025-03-01 22:58:10,292 - ERROR - in file - tc_Inventory_dim.json: ORA-00942: table or view does not exist
+2025-03-01 22:58:10,338 - DEBUG - # _do_auth(): self._auth_plugin: 
+2025-03-01 22:58:10,339 - DEBUG - new_auth_plugin: caching_sha2_password
+2025-03-01 22:58:10,412 - INFO - *** Initiated processing of file:tc_Product_dim.json ***
+2025-03-01 22:58:10,413 - INFO - *** Source table:product Target table product_dim validation initiated ***
+2025-03-01 22:58:10,415 - ERROR - in file - tc_Product_dim.json: ORA-00942: table or view does not exist
+2025-03-01 22:58:10,455 - DEBUG - # _do_auth(): self._auth_plugin: 
+2025-03-01 22:58:10,455 - DEBUG - new_auth_plugin: caching_sha2_password
+2025-03-01 22:58:10,524 - INFO - *** Initiated processing of file:tc_Sales_fact.json ***
+2025-03-01 22:58:10,525 - INFO - *** Source table:product Target table sales_fact validation initiated ***
+2025-03-01 22:58:10,528 - ERROR - in file - tc_Sales_fact.json: ORA-00942: table or view does not exist
+2025-03-01 22:58:10,530 - INFO - *** Null checks initiated in Target Table ***
+2025-03-01 22:58:10,576 - INFO - *** Target Table:cost_dim validations initiated ***
+2025-03-01 22:58:10,576 - ERROR - in file - tc_Cost_dim.json: 'tc_03_Verifying Null Values in Target Table'
+2025-03-01 22:58:10,645 - INFO - *** Target Table:inventory_dim validations initiated ***
+2025-03-01 22:58:10,716 - INFO - *** Target Table:product_dim validations initiated ***
+2025-03-01 22:58:10,752 - INFO - *** Target Table:sales_fact validations initiated ***
+2025-03-01 22:58:10,792 - INFO - Duplicate records found in table cost_dim: P101

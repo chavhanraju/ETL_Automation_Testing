@@ -1,0 +1,26 @@
+{
+  "tc_01_Verifying Source & Target Table Existence":{
+          "s_table":"cost",
+          "t_table": "cost_dim"
+},
+
+  "tc_02_Verifying Source & Target Record counts" :{
+  "s_count": "select count(*) from cost",
+  "t_count": "select count(*) from cost_dim"
+},
+
+"tc_03_Verifying Null values in Target Table": {
+  "null_rec_cnt": "select count(*) from cost_dim where p_id is null or price is null or sales_date is null",
+  "null_records": "select p_id from cost_dim where p_id is null or price is null or sales_date is null"
+},
+
+"tc_04_Checking Duplicate Records in Target Table": {
+  "t_dup_cnt": "select count(p_id) from cost_dim group by p_id having count(*)>1",
+  "t_dup_records": "select p_id from cost_dim group by p_id having count(*)>1"
+},
+
+"tc_05_Verifying Source and Target Column Mapping": {
+  "s_table": "select p_id,round(price) as price,sales_date from cost",
+  "t_table": "select p_id,price,sales_date from cost_dim"
+}
+}
